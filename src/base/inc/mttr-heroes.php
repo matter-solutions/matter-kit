@@ -52,7 +52,7 @@ function mttr_get_hero_data_array() {
 
 				'title' => mttr_get_contextual_title(),
 				'image' => mttr_get_hero_image(),
-				'image_mobile' => mttr_get_hero_image( 'mobile' ),
+				'image_mobile' => mttr_get_hero_image( get_the_ID(),'mobile' ),
 				'identifier' => 'main',
 				'indicator' => '.hero-standard + .band',
 				'modifiers' => 'hero-standard--wide  hero-standard--overlay  hero-standard--fullscreen  hero-standard--center  hero-standard--petite',
@@ -70,7 +70,7 @@ function mttr_get_hero_data_array() {
 
 				'title' => mttr_get_contextual_title(),
 				'image' => mttr_get_hero_image(),
-				'image_mobile' => mttr_get_hero_image( 'mobile' ),
+				'image_mobile' => mttr_get_hero_image( get_the_ID(),'mobile' ),
 				'identifier' => 'main',
 				'modifiers' => 'hero-standard--overlay  hero-standard--wide  hero-standard--center',
 
@@ -85,7 +85,7 @@ function mttr_get_hero_data_array() {
 			'elements' => array(
 
 				'image' => mttr_get_hero_image(),
-				'image_mobile' => mttr_get_hero_image( 'mobile' ),
+				'image_mobile' => mttr_get_hero_image( get_the_ID(),'mobile' ),
 				'identifier' => 'main',
 				'modifiers' => 'hero-standard--wide  hero-standard--large  hero-standard--overlay  hero-standard--center',
 
